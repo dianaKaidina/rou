@@ -1,0 +1,90 @@
+.intro_wrapper{
+    grid-column-start: 2;
+    display: grid;
+    row-gap: 123px;
+    justify-content: space-around;
+}
+
+.intro_title{
+    text-align: center;
+    display: grid;
+    row-gap: 48px;
+    grid-template-columns: 830px;
+    grid-template-rows: auto;
+    margin: 0 auto;
+
+    .intro_h2{
+        color: $prp;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .intro_h1{
+        font-size: 60px;
+        font-weight: bolder;
+    }
+}
+
+.intro_content{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 500px;
+    column-gap: 30px;
+
+    .intro_cards{
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 253px;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: 30px;
+
+        .intro_card_h3{
+            font-size: 24px;
+            font-weight: bolder;
+            background-repeat: no-repeat;
+            background-position: top center;
+            padding-top: 150px;
+        }
+        .intro_card_anchor{
+            background-image: url(../img/anchor.png);
+        }
+        .intro_card_list{
+            background-image: url(../img/archive.png);
+        }
+        .intro_card_person{
+            background-image: url(../img/user.png);
+        }
+    }
+    .intro_card_p{
+        color: #5e5858;
+    }
+
+    .color_pink{
+        border: 5px #fcd7df solid;
+
+    }
+    .color_blue{
+        border: 5px #c9f3e2 solid;
+
+    }
+    .color_orange{
+        border: 5px #f2d5ba solid;
+
+    }
+
+    .color_pink:hover{
+        border: 5px #fcd7dfc2 solid;
+
+    }
+    .color_blue:hover{
+        border: 5px #c9f3e2a6 solid;
+
+    }
+    .color_orange:hover{
+        border: 5px #f2d5bab7 solid;
+
+    }
+}
